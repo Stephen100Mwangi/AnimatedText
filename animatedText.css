@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: contain;
+    position: absolute;
+    background: linear-gradient(90deg,lightpink 50%,#f3f0f0 40%),url();
+}
+
+ul
+{
+    float: right;
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+ul li a{
+    text-decoration: none;
+    text-emphasis: none;
+    margin: 5px;
+    color: green;
+    font-size: 20px;
+    padding: 20px 10px;
+}
+.title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    font-size: 50px;
+    background-image: linear-gradient(cadetblue,cadetblue);
+    background-repeat: no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: backcolor 5s linear infinite alternate;
+    background-position: -750px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@keyframes backcolor
+{
+    100%{
+        background-position: 0 0;
+    }
+}
